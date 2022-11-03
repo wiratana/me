@@ -1,0 +1,18 @@
+.container{
+    width: 900px;
+    margin: 0 auto;
+}
+
+.container-fluid{
+    width: 100%;
+}
+
+.flex{
+    display: flex;
+}
+
+.image-responsive {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+}
