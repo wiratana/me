@@ -11,10 +11,13 @@
     display: flex;
 }
 
-flex-column{
+.flex-row{
     flex-direction: row;
 }
 
+.flex-wrap{
+    flex-wrap: wrap;
+}
 
 .image-responsive {
     width: 100%;
@@ -24,4 +27,12 @@ flex-column{
 
 .image-rounded{
     border-radius: 50%;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.justify-between{
+    justify-content: space-around;
 }

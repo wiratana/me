@@ -15,6 +15,9 @@ body{
 h1{
     font-size: 50px;
 }
+h2{
+    font-size: 45px;
+}
 
 section{
     padding: 20px 0;
@@ -63,6 +66,15 @@ section{
     width: 60%;
     padding: 0 10px 0 10;
 }
+.quote > .text-container > .title{
+    line-height: 1.25;
+    margin-bottom: 20px;
+}
+.quote .text-container .description{
+    margin-top: 25px;
+    line-height: 1.5;
+    font-family: "poppins";
+}
 .quote > *{
     z-index: 1;
 }
@@ -70,46 +82,50 @@ section{
     font-size: 48px;
     padding: 5px;
 }
-.group-quote > .block-quote{
+.block-quote{
     background-color: var(--fourth);
     padding: 5px;
 }
-/* .quote::after{
-    content: url(../assets/images/greek-god-hand.png);
-    width: 100%;
-    display: block;
-    position: absolute;
-    top: 200px;
-    left: 0;
-    transform: rotate(-20deg);
-} */
 
 .education-container{
     position: relative;
+    margin-bottom: 100px;
 }
 .education > *{
     z-index: 1;
 }
-.education:before{
+.education-title{
+    font-size: 50px;
+    margin-bottom: 50px;
+    position: relative;
+}
+.education-title::after{
     content: "";
     display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 100%;
+    left: 0;
+    background-color: var(--third);
+}
+.education > .text-container{
     width: 70%;
+    padding-left: 20px;
+}
+/* .education:before{
+    content: "";
+    display: block;
+    width: 50%;
     height: 100%;
     background-color: var(--third);
     position: absolute;
     top: 0;
     left: 0;
-    transform: translate(43%, 0);
-}
-.education-title{
-    font-size: 50px;
-}
-.education > .text-container{
-    width: 70%;
-    padding-left: 10px;
-}
+    transform: translate(100%, 0);
+} */
 .group-education{
-    margin-bottom: 20px;
+    margin-bottom: 45px;
     line-height: 1.5;
 }
 .group-education > .institute{
@@ -119,15 +135,44 @@ section{
     font-family: "poppins";
     font-size: 16px;
 }
+.group-education > .date{
+    font-size: 14px;
+    display: inline-block;
+    padding: 5px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    margin-top: 5px;
+}
 
-
+.experience-container{
+    margin-bottom: 100px;
+}
 .experience-title{
     font-size: 50px;
+    margin-bottom: 50px;
+    position: relative;
     text-align: right;
 }
+.experience-title::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 100%;
+    left: 0;
+    background-color: var(--third);
+}
+.experience .text-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 .group-experience{
-    margin-bottom: 20px;
-    width: 70%;
+    margin-bottom: 30px;
+    width: 45%;
+    margin: 0 auto 30px;
 }
 .group-experience > .title{
     font-size: 24px;
@@ -145,5 +190,28 @@ section{
     margin: 10px 0 5px;
     border-radius: 15px;
     font-family: "poppins";
+}
+
+
+.project-title{
+    font-size: 50px;
+    margin-bottom: 50px;
+    position: relative;
+}
+.project-title::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 100%;
+    left: 0;
+    background-color: var(--third);
+}
+
+.footer{
+    background-color: var(--second);
+    padding: 10px;
+    border-radius: 10px;
 }
 
